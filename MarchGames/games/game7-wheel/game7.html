@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Season Wheel - Game 7</title>
+    <link rel="stylesheet" href="../../common.css">
+    <link rel="stylesheet" href="game7.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+    <div class="game-wrapper">
+        <a href="../../index.html" class="back-link">← Меню</a>
+        <h1>Season Wheel</h1>
+        <h2 id="instruction">Знайди Spring 🌱</h2>
+
+        <div class="wheel-area">
+            <div class="pointer">▼</div>
+            
+            <div id="wheel" class="wheel">
+                <div class="segment spring">🌱</div>
+                <div class="segment summer">☀️</div>
+                <div class="segment autumn">🍂</div>
+                <div class="segment winter">❄️</div>
+            </div>
+        </div>
+
+        <button id="spinBtn" class="action-btn">Крутити!</button>
+        <div class="progress-message" id="progressMessage">Натискай на кнопку або колесо!</div>
+    </div>
+
+    <script src="../../audio-manager.js"></script>
+    <script src="../../victory.js"></script>
+    <script src="game7.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Geometric Birdhouse - March</title>
+    <link rel="stylesheet" href="../../common.css">
+    <link rel="stylesheet" href="game5.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+    <div class="game-wrapper">
+        <a href="../../index.html" class="back-link">← Меню</a>
+        
+        <h1>Geometric Birdhouse</h1>
+        <p>Побудуй затишний будиночок для пташки!</p>
+
+        <div class="game-container">
+            <div class="palette-area">
+                <h3>Запчастини:</h3>
+                <div id="shapePalette" class="shape-palette"></div>
+            </div>
+
+            <div class="build-area" id="buildArea">
+                <div class="placeholder square" data-part="body" data-shape="square"></div>
+                <div class="placeholder triangle" data-part="roof" data-shape="triangle"></div>
+                <div class="placeholder circle" data-part="entrance" data-shape="circle"></div>
+            </div>
+        </div>
+
+        <div class="progress-message" id="progressMessage">Зібрано: 0 / 3</div>
+    </div>
+
+    <script src="../../audio-manager.js"></script>
+    <script src="../../victory.js"></script>
+    <script src="game5.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seasons Painter - March</title>
+    <link rel="stylesheet" href="game3.css">
+    <link rel="stylesheet" href="../../common.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+
+    <div class="game-wrapper">
+        <a href="../../index.html" class="back-link">← Меню</a>
+        
+        <h1 id="seasonTitle">Spring Painter</h1>
+        <p>Обери колір та натисни на частину малюнку!</p>
+
+        <div class="painter-layout">
+            <div class="canvas-container" id="canvas">
+                <div class="sky paintable" id="skyArea"></div>
+                <div class="tree-crown paintable" id="crownArea"></div>
+                <div class="tree-trunk paintable" id="trunkArea"></div>
+                <div class="ground paintable" id="groundArea"></div>
+                
+                <button id="nextBtn" class="next-button">Next Season ➔</button>
+            </div>
+
+            <div class="palette-wrapper">
+                <h3>Палітра кольорів:</h3>
+                <div class="color-palette" id="palette"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../audio-manager.js"></script>
+    <script src="../../victory.js"></script>
+    <script src="game3.js"></script>
+</body>
+</html>

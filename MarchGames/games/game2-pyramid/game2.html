@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Spring Pyramid - March</title>
+    <link rel="stylesheet" href="game2.css">
+    <link rel="stylesheet" href="../../common.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+    <div class="game-wrapper">
+        <a href="../../index.html" class="back-link">← Меню</a>
+        <h1>Spring Pyramid</h1>
+        <p>Склади квіти: від найбільшої до найменшої!</p>
+
+        <div class="game-container">
+            <div class="pyramid-base" id="pyramidBase">
+                <div class="rod"></div>
+                <div class="rings-on-rod" id="rodArea"></div>
+            </div>
+
+            <div class="rings-pool" id="ringsPool"></div>
+        </div>
+    </div>
+
+    <script src="../../audio-manager.js"></script>
+    <script src="../../victory.js"></script>
+    <script src="game2.js"></script>
+</body>
+</html>

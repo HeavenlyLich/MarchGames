@@ -1,0 +1,86 @@
+﻿body {
+    background-color: #f0f4c3; 
+}
+
+.build-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.helper-bird {
+    width: 100px;
+    transform: scaleX(-1);
+}
+
+.nest-zone {
+    width: 220px;
+    height: 180px;
+    border: 6px dashed #8d6e63;
+    border-radius: 50% / 40%;
+    background: rgba(141, 110, 99, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: background 0.3s;
+}
+
+.nest-zone.drag-over {
+    background: rgba(141, 110, 99, 0.3);
+    transform: scale(1.05);
+}
+
+.nest-label {
+    font-weight: bold;
+    color: #5d4037;
+    pointer-events: none;
+}
+
+.materials-area {
+    width: 80%;
+    height: 250px;
+    margin: 40px auto;
+    background: white;
+    border-radius: 30px;
+    position: relative;
+    box-shadow: inset 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.item {
+    position: absolute;
+    font-size: 50px;
+    cursor: grab;
+    user-select: none;
+}
+
+.item:active {
+    cursor: grabbing;
+}
+
+.in-nest {
+    position: absolute !important;
+    font-size: 40px !important;
+    pointer-events: none;
+}
+
+.nest-zone.nest-complete {
+    border: none;
+    background-color: transparent;
+    background-image: url('../../assets/images/nest.png');
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: all 0.5s ease;
+}
+
+.nest-zone.nest-complete .nest-label {
+    display: none;
+}
+
+.nest-zone.nest-complete .item.in-nest {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}

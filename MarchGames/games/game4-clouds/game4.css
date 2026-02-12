@@ -1,0 +1,76 @@
+﻿body {
+    background: linear-gradient(to bottom, #81d4fa, #e1f5fe);
+    margin: 0;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    overflow: hidden;
+}
+
+.game-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.task-banner {
+    background: white;
+    padding: 10px 40px;
+    border-radius: 0 0 30px 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    z-index: 10;
+}
+
+#targetShapeName {
+    color: #0288d1;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.sky-area {
+    position: relative;
+    width: 100%;
+    flex-grow: 1;
+}
+
+.cloud {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background-color: white;
+    cursor: pointer;
+    transition: transform 0.3s, opacity 0.3s;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    box-shadow: inset -10px -10px 20px rgba(0,0,0,0.05);
+    animation: float 4s ease-in-out infinite;
+}
+
+.cloud:hover {
+    transform: scale(1.1);
+}
+
+.progress-bar {
+    padding: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+@keyframes float {
+    0% { transform: translateX(0px); }
+    50% { transform: translateX(20px) translateY(-10px); }
+    100% { transform: translateX(0px); }
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-10px); }
+    75% { transform: translateX(10px); }
+}
+
+.shake-animation {
+    animation: shake 0.3s ease-in-out 2 !important;
+}

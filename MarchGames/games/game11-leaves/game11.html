@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Windy Leaves - Game 11</title>
+    <link rel="stylesheet" href="../../common.css">
+    <link rel="stylesheet" href="game11.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+    <div class="game-wrapper">
+        <a href="../../index.html" class="back-link">← Меню</a>
+        <h1>Windy Leaves</h1>
+        <h2 id="instruction">Розклади листя по кошиках за кольором!</h2>
+
+        <div class="baskets-container">
+            <div class="basket-box" data-color="light">
+                <div class="basket-mask" style="background-color: #9ccc65;"></div>
+                <span>Світлий</span>
+            </div>
+            <div class="basket-box" data-color="dark">
+                <div class="basket-mask" style="background-color: #388e3c;"></div>
+                <span>Темний</span>
+            </div>
+        </div>
+
+        <div class="windy-area" id="windyArea">
+            </div>
+
+        <div class="progress-message" id="progressMessage">Зібрано: 0 / 6</div>
+    </div>
+
+    <script src="../../audio-manager.js"></script>
+    <script src="../../victory.js"></script>
+    <script src="game11.js"></script>
+</body>
+</html>
